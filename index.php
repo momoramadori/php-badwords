@@ -1,11 +1,10 @@
  <!-- esempio saluto terminale <?php echo 'ciao ' . $argv[1] . ' ' . $argv[2] ?>  -->
 
 <?php 
-    $sentence = 'Benvenuto nel lato oscuro! Sono Darth Vader e sono il tuo fottuto padre!';
+    $sentence = 'Benvenuto nel lato oscuro! Sono Darth Vader e sono il tuo parolacciadacensurare padre!';
     $badword = $_GET['badword'];
-    $badword_center = substr($badword,1,4);
     $censure = '***';
-    $censured_sentence = str_replace($badword_center , $censure, $sentence);
+    $censured_sentence = str_replace($badword , $censure, $sentence);
 ?>
 
 <!DOCTYPE html>
